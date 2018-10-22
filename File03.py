@@ -16,12 +16,13 @@
 
 import struct
 
-a = 1024000
-b = 10.24
-c = True
-d = "我早上八点在图书馆写代码"
-e = struct.pack("if?", a, b, c)
+a = "hello"
+b = "world"
+c = 2
+d = 12.34
+e = struct.pack("5s5sif",  a, b, c, d)
 f = open("FILE03.dat", "wb")
 f.write(e)
+
 f.close()
 
