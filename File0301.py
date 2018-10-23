@@ -7,9 +7,9 @@
 import struct
 
 f = open("FILE03.dat", "rb")
-sn = f.read()
-a, b, c, d, = struct.unpack('5s6sif', sn)
-print(a, b, c, d)
+sn = f.read(10)
+c, d= struct.unpack('if', sn)
+print(c, d)
 
 
 s = f.read(9)

@@ -20,9 +20,10 @@ a = "hello"
 b = "world"
 c = 2
 d = 12.34
-e = struct.pack("5s5sif",  a, b, c, d)
+e = struct.pack("if", c, d)
 f = open("FILE03.dat", "wb")
 f.write(e)
-
 f.close()
+
+somestring = 'abcd'
 
