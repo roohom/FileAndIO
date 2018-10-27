@@ -22,7 +22,7 @@ def file_writer(file_name):
         if fp == "exit":
             break
         else:
-            f.write("\n{}".format(fp))
+            f.write("{}\n".format(fp))
 
     f.close()
 
